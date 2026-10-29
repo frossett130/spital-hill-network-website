@@ -8,6 +8,12 @@
 
 **Input**: User description: "Create a React-integrated Astro project skeleton, ignore generated npm build files, and update the README accordingly."
 
+## Clarifications
+
+### Session 2026-10-29
+
+- Q: What should the local starter page show when the project is first created? → A: A neutral informational layout with placeholders for organization-approved content.
+
 ## User Scenarios & Testing *(mandatory)*
 
 ### User Story 1 - Start development from a ready project (Priority: P1)
@@ -26,6 +32,12 @@ starter site locally.
    setup and start instructions, **Then** the starter site is available locally.
 2. **Given** the starter project, **When** a developer runs its documented build command,
    **Then** a static site build completes successfully.
+3. **Given** the starter page before approved charity content is supplied, **When** a developer
+   views it, **Then** it shows clearly marked neutral placeholders rather than invented charity
+   details.
+4. **Given** the starter page at viewport widths from 320 px to 1920 px, **When** a visitor reads
+   it and navigates interactive elements by keyboard, **Then** content remains usable without
+   horizontal scrolling or overlap, and keyboard focus remains visible.
 
 ---
 
@@ -92,6 +104,11 @@ status and confirm generated files are ignored.
   project skeleton.
 - **FR-007**: The starter site MUST remain informational and MUST NOT require accounts or collect
   visitor personal information.
+- **FR-008**: The starter page MUST use a neutral informational layout with clearly marked
+  placeholders for organization-approved content and MUST NOT present unapproved charity details
+  as facts.
+- **FR-009**: The starter page MUST remain usable at phone, tablet, and desktop sizes and MUST
+  support keyboard navigation with visible focus for every interactive element.
 
 ## Success Criteria *(mandatory)*
 
@@ -106,13 +123,16 @@ status and confirm generated files are ignored.
 - **SC-004**: All documented setup, development, and build commands correspond to available
   project tasks.
 - **SC-005**: The README contains no production hosting or server-configuration instructions.
+- **SC-006**: At viewport widths from 320 px to 1920 px, the starter page has no horizontal
+  scrolling or overlapping essential content, and every interactive element is keyboard reachable
+  with visible focus.
 
 ## Assumptions
 
 - The project uses Astro with its React integration, as explicitly requested.
 - npm is the package manager and the README will identify the needed runtime prerequisites.
-- The starter page is a minimal, informational foundation; charity content and approved contact
-  details will be added separately.
+- The starter page uses neutral placeholders until charity content and contact details are
+  approved.
 - Ignore rules cover generated dependencies, framework caches, and build output, not authored
   source files.
 - Production hosting and server setup are outside this feature's scope.
