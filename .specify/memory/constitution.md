@@ -1,11 +1,10 @@
 <!--
 Sync Impact Report
-Version change: not established -> 1.0.0
-Modified principles: None; this is the initial constitution.
-Added sections: Technical Constraints; Delivery and Review Standards.
-Populated template sections: Core Principles; Governance.
+Version change: 1.0.0 -> 2.0.0
+Modified principles/constraints: Technical Constraints — removed the previous hosting-platform assumption.
+Added sections: None.
 Removed sections: None.
-Follow-up TODO: Confirm the original ratification date.
+Follow-up TODO: Confirm the original ratification date. Hosting platform remains unspecified.
 -->
 
 # Spital Hill Network Website Constitution
@@ -46,9 +45,8 @@ needed to meet an approved requirement. This keeps the initial site simple and r
 
 The site MUST use Astro to generate static website output. React MAY be used for interactive
 components where needed, but the informational site MUST NOT require a React application in the
-visitor's browser. The expected deployment builds the output with npm and serves generated files
-with Apache. Server hardening and deployment automation are deployment concerns, not requirements
-for the website runtime.
+visitor's browser. Hosting platform, server configuration, and deployment automation are outside
+the project's documented technical constraints.
 
 ## Delivery and Review Standards
 
@@ -72,4 +70,4 @@ MINOR for new principles or materially expanded requirements, and PATCH for clar
 non-semantic wording changes. Reviews MUST check proposed work and releases for compliance with
 these principles; any exception MUST be explicitly approved and recorded with its rationale.
 
-**Version**: 1.0.0 | **Ratified**: TODO(RATIFICATION_DATE): original adoption date unknown | **Last Amended**: 2026-10-29
+**Version**: 2.0.0 | **Ratified**: TODO(RATIFICATION_DATE): original adoption date unknown | **Last Amended**: 2026-10-29
