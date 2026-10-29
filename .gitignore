@@ -1,1 +1,10 @@
 copilot-documents/
+
+# Node.js and Astro generated files
+node_modules/
+dist/
+.astro/
+build/
+coverage/
+*.log
+.env*

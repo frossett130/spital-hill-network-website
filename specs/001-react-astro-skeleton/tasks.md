@@ -14,8 +14,8 @@ independently after shared project setup.
 
 **Purpose**: Declare the project dependencies and supported npm scripts.
 
-- [ ] T001 Define Astro, React, React DOM, TypeScript, and Astro check dependencies plus `dev`, `build`, `preview`, and `check` scripts in `package.json`
-- [ ] T002 Install the declared dependencies and generate `package-lock.json`
+- [X] T001 Define Astro, React, React DOM, TypeScript, and Astro check dependencies plus `dev`, `build`, `preview`, and `check` scripts in `package.json`
+- [X] T002 Install the declared dependencies and generate `package-lock.json`
 
 ---
 
@@ -23,8 +23,8 @@ independently after shared project setup.
 
 **Purpose**: Configure the static Astro project before implementing individual stories.
 
-- [ ] T003 Configure Astro to use the React integration and static output in `astro.config.mjs`
-- [ ] T004 Add strict Astro TypeScript defaults in `tsconfig.json`
+- [X] T003 Configure Astro to use the React integration and static output in `astro.config.mjs`
+- [X] T004 Add strict Astro TypeScript defaults in `tsconfig.json`
 
 **Checkpoint**: Dependencies are installed, Astro is configured for static output, and all user
 story work can begin.
@@ -42,10 +42,10 @@ horizontal scrolling or content overlap.
 
 ### Implementation for User Story 1
 
-- [ ] T005 [P] [US1] Create a semantic shared page shell with viewport metadata in `src/layouts/SiteLayout.astro`
-- [ ] T006 [P] [US1] Add responsive base styles and visible keyboard focus styles in `src/styles/global.css`
-- [ ] T007 [US1] Build the neutral placeholder home page using the shared layout and stylesheet in `src/pages/index.astro`
-- [ ] T008 [US1] Run `npm run check` and `npm run build`; review the generated page at 320 px, 768 px, and 1920 px and verify keyboard reading order
+- [X] T005 [P] [US1] Create a semantic shared page shell with viewport metadata in `src/layouts/SiteLayout.astro`
+- [X] T006 [P] [US1] Add responsive base styles and visible keyboard focus styles in `src/styles/global.css`
+- [X] T007 [US1] Build the neutral placeholder home page using the shared layout and stylesheet in `src/pages/index.astro`
+- [X] T008 [US1] Run `npm run check` and `npm run build`; review the generated page at 320 px, 768 px, and 1920 px and verify keyboard reading order
 
 **Checkpoint**: A new contributor can run the static starter page with no unapproved charity
 claims, visitor data collection, or unnecessary client-side hydration.
@@ -61,7 +61,7 @@ scripts and that the README describes no production hosting or server configurat
 
 ### Implementation for User Story 2
 
-- [ ] T009 [US2] Update `README.md` with project purpose, Astro and React stack, prerequisites, and local install, development, check, and build commands; remove deployment, hosting, and server-configuration information and add no server configuration files anywhere in `.`
+- [X] T009 [US2] Update `README.md` with project purpose, Astro and React stack, prerequisites, and local install, development, check, and build commands; remove deployment, hosting, and server-configuration information and add no server configuration files anywhere in `.`
 
 **Checkpoint**: Contributors can set up and build the project from the README alone.
 
@@ -76,8 +76,8 @@ dependency, cache, and output directories are ignored by Git.
 
 ### Implementation for User Story 3
 
-- [ ] T010 [US3] Add ignore rules for installed dependencies, Astro caches, and generated static build output in `.gitignore`
-- [ ] T011 [US3] Verify generated files are ignored with `git check-ignore` and confirm no generated paths appear as untracked files in `git status --short`
+- [X] T010 [US3] Add ignore rules for installed dependencies, Astro caches, and generated static build output in `.gitignore`
+- [X] T011 [US3] Verify generated files are ignored with `git check-ignore` and confirm no generated paths appear as untracked files in `git status --short`
 
 **Checkpoint**: Installing and building the project does not add generated files to repository status.
 
@@ -87,7 +87,7 @@ dependency, cache, and output directories are ignored by Git.
 
 **Purpose**: Validate the complete contributor workflow and ensure documentation matches the project.
 
-- [ ] T012 Run the complete validation flow in `specs/001-react-astro-skeleton/quickstart.md` and confirm all documented npm commands exist in `package.json`
+- [X] T012 Run the complete validation flow in `specs/001-react-astro-skeleton/quickstart.md` and confirm all documented npm commands exist in `package.json`
 
 ---
 

@@ -1,36 +1,60 @@
 # Spital Hill Network Website
 
-A planned public-facing website for the charity. Its purpose is to help members of the public understand the organization, learn about its activities, and find an approved way to get in touch.
+An informational website starter for the charity. It uses Astro to generate a static site and
+includes React integration for interactive components if they are needed.
 
 ## Project status
 
-The project is in the specification stage. The charity's public name, approved content, and contact details have not yet been confirmed. This repository does not yet contain the website implementation.
+The project is a working starter. The homepage contains clearly marked placeholders; replace them
+only with content approved by the organization. No visitor accounts or personal-data collection
+are included.
 
-## Initial release
+## Requirements
 
-The first release is intended to be a small, primarily informational website. It should:
+- Node.js 22.23.4 or newer, using an even-numbered release
+- npm
 
-- Explain the charity's purpose and summarize its approved activities.
-- Clearly identify the organization as the source of the information and indicate when it was last reviewed.
-- Provide clear navigation and an approved contact route.
-- Work on phone, tablet, and desktop screens, and support keyboard navigation with visible focus.
-- Make essential information available as text, with appropriate alternatives for meaningful images.
-- Avoid requiring visitor accounts or collecting personal information.
+## Getting started
 
-Online donations, accounts, contact forms that collect personal information, event booking, and a news publishing system are outside the initial scope.
+Install dependencies and start the local development site:
 
-## Planned technology and deployment
+```sh
+npm ci
+npm run dev
+```
 
-The site is planned to use [Astro](https://astro.build/) to generate static files. React may be used for interactive components if needed, but the informational site should not require a client-side React application, a running application server, or a database.
+Open the local address printed in the terminal.
 
-The expected deployment is to build the static output with npm and serve the generated files using Apache. Apache configuration and deployment automation have not yet been specified.
+## Available commands
 
-## Content and release readiness
+| Command | Purpose |
+|---------|---------|
+| `npm run dev` | Start the local development site |
+| `npm run check` | Check Astro and TypeScript diagnostics |
+| `npm run build` | Generate the static site |
+| `npm run preview` | Preview the generated site locally |
 
-Before publication, the organization needs to approve:
+Run the check and build before sharing changes:
 
-- Its public name, purpose, service area (if applicable), and activity descriptions.
-- The contact method and details to publish.
-- Any images and any additional first-release information, such as opening hours, location, accessibility information, or social links.
+```sh
+npm run check
+npm run build
+```
 
-Unapproved or unavailable information should not be presented as confirmed. Published links should be checked before release.
+## Project structure
+
+- `src/pages/` contains the site's pages.
+- `src/layouts/` contains shared page layouts.
+- `src/styles/` contains global styles.
+- `src/components/` is available for reusable components.
+- `public/` is for static assets.
+
+The initial page is built with Astro and does not require client-side React. Add React components
+only when an approved requirement calls for them.
+
+## Content and accessibility
+
+Do not present unapproved charity details as facts. Before publication, confirm the public name,
+purpose, activities, contact route, and review date with the organization. Keep content readable
+on small and large screens and ensure interactive elements can be reached by keyboard with visible
+focus.
