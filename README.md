@@ -34,7 +34,3 @@ Before publication, the organization needs to approve:
 - Any images and any additional first-release information, such as opening hours, location, accessibility information, or social links.
 
 Unapproved or unavailable information should not be presented as confirmed. Published links should be checked before release.
-
-## Specification
-
-The feature specification is in [`copilot-documents/specification-draft.md`](copilot-documents/specification-draft.md).
