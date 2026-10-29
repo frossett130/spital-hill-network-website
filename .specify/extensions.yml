@@ -1,0 +1,59 @@
+hooks:
+  after_specify:
+    - extension: workspace-git-skills
+      command: create-feature-branch
+      description: Create a feature branch for the generated specification.
+      optional: true
+      prompt: >
+        Create a feature branch for this feature. Use the feature name for the
+        branch and report the resulting branch name.
+    - extension: workspace-git-skills
+      command: commit-feature-artifacts
+      description: Commit the generated specification files.
+      optional: true
+      prompt: >
+        Commit only the generated specification files for this feature. Do not
+        include unrelated working-tree or staged changes.
+  after_clarify:
+    - extension: workspace-git-skills
+      command: commit-feature-artifacts
+      description: Commit the clarified specification files.
+      optional: true
+      prompt: >
+        Commit the updated specification files after incorporating the user's
+        clarifications. Do not include unrelated working-tree or staged changes.
+  after_plan:
+    - extension: workspace-git-skills
+      command: commit-feature-artifacts
+      description: Commit the generated planning artifacts.
+      optional: true
+      prompt: >
+        Commit the generated planning artifacts, including the implementation
+        plan and related design documents. Do not include unrelated working-tree
+        or staged changes.
+  after_analyze:
+    - extension: workspace-git-skills
+      command: commit-feature-artifacts
+      description: Commit saved analysis artifacts, if any.
+      optional: true
+      prompt: >
+        Commit only existing, explicitly saved analysis artifacts for this
+        feature. Do not create or modify files; if no saved analysis artifact
+        exists, report that there is nothing to commit. Exclude unrelated
+        working-tree or staged changes.
+  after_tasks:
+    - extension: workspace-git-skills
+      command: commit-feature-artifacts
+      description: Commit the generated task breakdown.
+      optional: true
+      prompt: >
+        Commit the generated tasks.md for this feature. Do not include unrelated
+        working-tree or staged changes.
+  after_implement:
+    - extension: workspace-git-skills
+      command: commit-feature-artifacts
+      description: Commit the completed implementation artifacts.
+      optional: true
+      prompt: >
+        Commit the completed implementation changes and related test updates for
+        this feature. Do not include unrelated working-tree or staged changes.
